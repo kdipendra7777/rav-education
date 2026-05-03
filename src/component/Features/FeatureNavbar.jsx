@@ -16,26 +16,25 @@ export default function FeatureNavbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
           ? "bg-white/80 backdrop-blur-xl shadow-md"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         <Link to="/" className="text-xl font-bold text-green-700">
-  Raman Arnava Vidyalaya
-</Link>
+          Raman Arnava Vidyalaya
+        </Link>
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
           <Link to="/" className="hover:text-green-600 transition">
-           RAV
+            RAV
           </Link>
 
           <Link to="/feature-career" className="hover:text-green-600 transition">
-           Home
+            Home
           </Link>
           <Link to="/features" className="hover:text-green-600 transition">
             Features
@@ -69,6 +68,10 @@ export default function FeatureNavbar() {
         <div className="md:hidden bg-white/95 backdrop-blur-xl px-6 pb-6 space-y-4 text-gray-700 font-medium shadow-md">
 
           <Link to="/" className="block">
+            RAV
+          </Link>
+
+          <Link to="/feature-career" className="block">
             Home
           </Link>
           <Link to="/features" className="block">
