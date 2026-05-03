@@ -14,7 +14,7 @@ export default function SupportOurMission() {
 
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Raman Arnava Vidyalaya is a mission-driven educational institution
-            committed to providing <span className="font-semibold">free, quality education</span>
+            committed to providing <span className="font-semibold">free, quality education-</span>
             to every children .
           </p>
         </div>
