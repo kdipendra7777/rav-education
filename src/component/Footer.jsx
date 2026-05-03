@@ -16,11 +16,10 @@ export default function Footer() {
         >
           <div className="flex flex-col items-start mb-5">
 
-            {/* LOGO */}
             <img
-              src="/images/raman_logo.png" // 👈 apna logo path yaha daal
+              src="/images/raman_logo.png"
               alt="Raman Arnava Vidyalaya"
-              className="w-30 h-22 mb-3 object-contain"
+              className="w-30 h-22 mb-3 object-contain ml-0"
             />
 
             {/* TEXT */}

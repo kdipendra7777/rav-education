@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "../component/Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../component/Footer";
 
 const steps = [
     {
@@ -154,6 +155,7 @@ export default function AdmissionProcess() {
 
                 </div>
             </section>
+            <Footer/>
         </>
     );
 }
