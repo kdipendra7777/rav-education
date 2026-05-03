@@ -26,11 +26,13 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
-              to="/admission"
+              to="/admission-process"
               className="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold hover:bg-blue-100 transition"
             >
-              Pre Registration 
+              Admission Process
             </Link>
+
+            
 
             <Link
               to="/pay"

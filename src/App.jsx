@@ -25,6 +25,8 @@ import CareerHome from "./pages/CareerHome.jsx";
 import Jobs from "./component/career/Jobs.jsx";
 import LearnMore from "./pages/LearnMore.jsx";
 import WorkProgress from "./pages/WorkProgress.jsx";
+import AdmissionProcess from "./pages/AdmissionProcess.jsx";
+import WelcomeKit from "./pages/WelcomeKit.jsx";
 
 
 
@@ -55,6 +57,8 @@ function App() {
         <Route path="/admission" element={<SchoolForm />} />
         <Route path="/pre-registration" element={<PreRegistrationModal/>}/>
         <Route path="/work-progress" element={<WorkProgress/>}/>
+        <Route path="/admission-process" element={<AdmissionProcess/>}/>
+        <Route path="wel-kit" element={<WelcomeKit/>}/>
 
         {/*  Smart School Section */}
         <Route path="/smart-school" element={<SmartPage />} />
