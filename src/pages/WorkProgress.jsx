@@ -54,7 +54,7 @@ export default function WorkProgressPage() {
               </div>
 
               <p className="mt-3 text-xs text-gray-400 text-center md:text-left">
-                {percent.toFixed(0)}% of required fund collected
+                {percent.toFixed(0)}% of intitial required fund collected
               </p>
 
             </div>

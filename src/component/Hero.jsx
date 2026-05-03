@@ -32,6 +32,13 @@ export default function Hero() {
               Admission Process
             </Link>
 
+             <Link
+              to="/work-progress"
+              className="bg-white text-blue-700 px-6 py-3 rounded-xl font-semibold hover:bg-blue-100 transition"
+            >
+              Work Progress
+            </Link>
+
             
 
             <Link

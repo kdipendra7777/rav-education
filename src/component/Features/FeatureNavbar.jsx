@@ -36,12 +36,8 @@ export default function FeatureNavbar() {
           <Link to="/feature-career" className="hover:text-green-600 transition">
             Home
           </Link>
-          <Link to="/features" className="hover:text-green-600 transition">
-            Features
-          </Link>
-          <Link to="/about" className="hover:text-green-600 transition">
-            About
-          </Link>
+          
+          
           <Link to="/contact" className="hover:text-green-600 transition">
             Contact
           </Link>
@@ -74,12 +70,7 @@ export default function FeatureNavbar() {
           <Link to="/feature-career" className="block">
             Home
           </Link>
-          <Link to="/features" className="block">
-            Features
-          </Link>
-          <Link to="/about" className="block">
-            About
-          </Link>
+        
           <Link to="/contact" className="block">
             Contact
           </Link>

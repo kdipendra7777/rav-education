@@ -14,8 +14,16 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <div className="flex items-center gap-3 mb-5">
+          <div className="flex flex-col items-start mb-5">
 
+            {/* LOGO */}
+            <img
+              src="/images/raman_logo.png" // 👈 apna logo path yaha daal
+              alt="Raman Arnava Vidyalaya"
+              className="w-30 h-22 mb-3 object-contain"
+            />
+
+            {/* TEXT */}
             <div>
               <h2 className="font-semibold text-xl">
                 Raman Arnava Vidyalaya
@@ -24,6 +32,7 @@ export default function Footer() {
                 Education with Values
               </p>
             </div>
+
           </div>
 
           <p className="text-sm text-blue-200 leading-relaxed mb-5">
@@ -32,10 +41,8 @@ export default function Footer() {
           </p>
 
           {/* SOCIAL */}
-
           <div className="flex gap-4 text-lg">
 
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/rav_education/"
               target="_blank"
@@ -44,7 +51,6 @@ export default function Footer() {
               <FaInstagram className="hover:text-pink-400 cursor-pointer transition" />
             </a>
 
-            {/* YouTube */}
             <a
               href="http://www.youtube.com/@RamanArnavaVidyalaya"
               target="_blank"
@@ -53,7 +59,6 @@ export default function Footer() {
               <FaYoutube className="hover:text-red-500 cursor-pointer transition" />
             </a>
 
-            {/* Facebook */}
             <a
               href="https://www.facebook.com/profile.php?id=61589159485496"
               target="_blank"
@@ -76,7 +81,10 @@ export default function Footer() {
             <li><Link to="/smart-school" className="hover:text-white transition">Smart School</Link></li>
             <li><Link to="/admission" className="hover:text-white transition">Admission</Link></li>
             <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
-            <li><Link to="/careers-job" className="hover:text-white transition">Career</Link></li>
+            <li><Link to="/careers" className="hover:text-white transition">Career</Link></li>
+            <li><Link to="/work-progress" className="hover:text-white transition">Work Progress</Link></li>
+            <li><Link to="/feature-career" className="hover:text-white transition">Features</Link></li>
+            <li><Link to="/joinmission" className="hover:text-white transition">Join Mission</Link></li>
           </ul>
         </motion.div>
 

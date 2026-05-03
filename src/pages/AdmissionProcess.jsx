@@ -59,7 +59,7 @@ export default function AdmissionProcess() {
                                 className="relative w-full rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.08)] group"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+                                    src="/images/admission.png"
                                     alt="Students learning"
                                     className="w-full h-[40vh] sm:h-[45vh] md:h-[55vh] object-cover transition duration-700 group-hover:scale-105"
                                 />
