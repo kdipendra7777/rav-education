@@ -48,7 +48,8 @@ export default function Hero() {
               <li>✔ Experienced & Caring Faculty</li>
               <li>✔ Smart Classrooms</li>
               <li>✔ Safe & Secure Campus</li>
-              <li>✔ Affordable Quality Education</li>
+              <li>✔  Quality Education</li>
+               <li>✔ Free Education</li>
             </ul>
           </div>
         </div>

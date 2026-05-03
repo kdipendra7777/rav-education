@@ -50,6 +50,29 @@ export default function Navbar() {
             Smart School
           </NavLink>
 
+
+          <NavLink
+            to="/joinmission"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-700 font-semibold text-base"
+                : "text-gray-600 hover:text-green-600 transition text-base"
+            }
+          >
+            Join Mission
+          </NavLink>
+
+           <NavLink
+            to="/admission"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-700 font-semibold text-base"
+                : "text-gray-600 hover:text-blue-600 transition text-base"
+            }
+          >
+            Admission
+          </NavLink>
+
           <NavLink
             to="/pay"
             className="ml-3 px-6 py-2.5 rounded-lg bg-blue-600 text-white text-base font-medium hover:bg-blue-700 transition shadow-sm"
@@ -99,6 +122,22 @@ export default function Navbar() {
               className="text-green-600 font-medium"
             >
               Smart School
+            </NavLink>
+
+            <NavLink
+              to="/joinmission"
+              onClick={() => setOpen(false)}
+              className="text-green-600 font-medium"
+            >
+              Join Mission
+            </NavLink>
+
+             <NavLink
+              to="/admission"
+              onClick={() => setOpen(false)}
+              className="text-blue-600 font-medium"
+            >
+              Admission
             </NavLink>
 
             <NavLink

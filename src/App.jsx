@@ -23,6 +23,7 @@ import AdminNotice from "./component/Admin/AdminNotice.jsx";
 import SmartSchoolForm from "./component/SmartSchool/SmartSchoolForm.jsx";
 import CareerHome from "./pages/CareerHome.jsx";
 import Jobs from "./component/career/Jobs.jsx";
+import LearnMore from "./pages/LearnMore.jsx";
 
 
 
@@ -64,6 +65,7 @@ function App() {
         {/* Career Page Section */}
         <Route path="/careers" element={<CareerHome/>}/>
         <Route path="/careers-job" element={<Jobs/>}/>
+        <Route path="/feature-career" element={<LearnMore/>}/>
        
 
         {/* Footter section page */}
