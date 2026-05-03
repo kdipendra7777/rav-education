@@ -24,6 +24,7 @@ import SmartSchoolForm from "./component/SmartSchool/SmartSchoolForm.jsx";
 import CareerHome from "./pages/CareerHome.jsx";
 import Jobs from "./component/career/Jobs.jsx";
 import LearnMore from "./pages/LearnMore.jsx";
+import WorkProgress from "./pages/WorkProgress.jsx";
 
 
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/joinmission" element={<JoinOurMission />} />
         <Route path="/admission" element={<SchoolForm />} />
         <Route path="/pre-registration" element={<PreRegistrationModal/>}/>
+        <Route path="/work-progress" element={<WorkProgress/>}/>
 
         {/*  Smart School Section */}
         <Route path="/smart-school" element={<SmartPage />} />

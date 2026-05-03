@@ -33,7 +33,19 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-7">
+        <nav className="hidden md:flex items-center gap-6">
+
+
+          <NavLink
+            to="/work-progress"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-700 font-semibold text-base"
+                : "text-gray-600 hover:text-blue-600 transition text-base"
+            }
+          >
+           Wrok Progress
+          </NavLink>
 
            <NavLink
             to="/feature-career"
@@ -77,8 +89,8 @@ export default function Navbar() {
             to="/admission"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-700 font-semibold text-base"
-                : "text-gray-600 hover:text-blue-600 transition text-base"
+                ? "text-green-600 font-semibold text-base"
+                : "text-gray-600 hover:text-green-600 transition text-base"
             }
           >
             Admission
@@ -118,6 +130,15 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-sm">
           <nav className="flex flex-col px-6 py-6 gap-5 text-center text-base">
+
+
+            <NavLink
+              to="/work-progress"
+              onClick={() => setOpen(false)}
+              className="text-gray-700 font-medium"
+            >
+              Work Progress
+            </NavLink>
 
              <NavLink
               to="/feature-career"
