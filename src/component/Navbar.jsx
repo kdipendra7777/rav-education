@@ -35,6 +35,17 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-10">
 
+           <NavLink
+            to="/feature-career"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-700 font-semibold text-base"
+                : "text-gray-600 hover:text-blue-600 transition text-base"
+            }
+          >
+           Features
+          </NavLink>
+
           <NavLink to="/careers" className={navItemClass}>
             Careers
           </NavLink>
@@ -107,6 +118,14 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-sm">
           <nav className="flex flex-col px-6 py-6 gap-5 text-center text-base">
+
+             <NavLink
+              to="/feature-career"
+              onClick={() => setOpen(false)}
+              className="text-gray-700 font-medium"
+            >
+              Feature
+            </NavLink>
 
             <NavLink
               to="/careers"
