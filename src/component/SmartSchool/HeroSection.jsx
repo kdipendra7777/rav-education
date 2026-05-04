@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-screen bg-[#0b0b0b] flex items-center justify-center relative overflow-hidden">
+    <div className="w-full h-screen bg-[#0b0b0b] flex items-start justify-center relative overflow-hidden pt-24 md:pt-28">
       
       {/* Animated Glow Background */}
       <motion.div
