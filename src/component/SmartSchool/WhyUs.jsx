@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Shield, Zap, Server, Users, Sparkles, Brain } from "lucide-react";
-import Navbar from "../SmartSchool/Navbar";
+import Navbar from "../Navbar";
+import SmartNavbar from "./SmartNavbar";
+
 
 const reasons = [
   {
@@ -45,7 +47,8 @@ export default function WhyUs() {
 
   return (
     <section className="bg-[#050505] text-white h-screen overflow-y-scroll snap-y snap-mandatory">
-      <Navbar />
+     <Navbar/>
+     <SmartNavbar/>
 
       {/* 🔥 HEADER */}
       <div className="min-h-screen snap-start flex flex-col items-center justify-center text-center px-6">

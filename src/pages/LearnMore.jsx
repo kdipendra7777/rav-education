@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import FeaturesHero from "../component/Features/FeaturesHero";
 import FreeEducationHighlight from "../component/Features/FreeEducationHighlight";
-import FeatureNavbar from "../component/Features/FeatureNavbar";
+import Navbar from "../component/Navbar";
 import SmartAISection from "../component/Features/SmartAISection";
 import CoderzCafe from "../component/Features/CoderzCafe";
 import LibrarySection from "../component/Features/LibrarySection";
@@ -15,7 +15,7 @@ export default function Highlights() {
 
   return (
     <>
-    <FeatureNavbar/>
+    <Navbar/>
     <FeaturesHero/>
     <FreeEducationHighlight/>
     <SmartAISection/>

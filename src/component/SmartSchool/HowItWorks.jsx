@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import Navbar from "../SmartSchool/Navbar";
+
 import { Cpu, Monitor, Server, Activity, Sparkles, Wifi } from "lucide-react";
+import Navbar from "../Navbar";
+import SmartNavbar from "./SmartNavbar";
 
 const steps = [
   {
@@ -39,7 +41,8 @@ export default function HowItWorks() {
   return (
     <div className="bg-[#050505] text-white min-h-screen">
 
-      <Navbar />
+      <Navbar/>
+      <SmartNavbar/>
 
       {/* 🔥 BIG HERO */}
       <section className="pt-40 pb-32 text-center px-6 relative overflow-hidden">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from "../SmartSchool/Navbar";
+
 
 
 export default function SmartAdmissionForm() {
@@ -9,7 +9,7 @@ export default function SmartAdmissionForm() {
   return (
    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 pt-24">
 
-        <Navbar/>
+        
       
       <div className="w-full max-w-5xl bg-white rounded-2xl shadow-xl border grid md:grid-cols-2 overflow-hidden">
 

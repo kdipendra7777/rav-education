@@ -1,15 +1,22 @@
 import { motion } from "framer-motion";
 import { Monitor, Cpu, Wifi, Sparkles, BookOpen, LayoutGrid } from "lucide-react";
-import Navbar from "../SmartSchool/Navbar";
+import Navbar from "../Navbar";
+import SmartNavbar from "./SmartNavbar";
+
 
 export default function ClassroomPage() {
     return (
-        <div className="bg-[#050505] text-white pt-20 md:pt-24 overflow-hidden">
 
-            <Navbar/>
+        <>
+
+        <Navbar/>
+        <SmartNavbar/>
+       <div className="bg-[#050505] text-white pt-10 md:pt-14 overflow-hidden">
+
+          
 
             {/* 🔥 HERO */}
-            <section className="py-24 md:py-44 text-center px-4 md:px-6 relative">
+           <section className="py-16 md:py-28 text-center px-4 md:px-6 relative">
 
                 <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[300px] h-[300px] md:w-[700px] md:h-[700px] bg-blue-500/20 blur-[100px] md:blur-[140px] rounded-full" />
 
@@ -179,5 +186,6 @@ export default function ClassroomPage() {
             </section>
 
         </div>
+        </>
     );
 }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Navbar from "../SmartSchool/Navbar";
+
 
 export default function BookVisit() {
     const [type, setType] = useState("individual");
@@ -8,7 +8,7 @@ export default function BookVisit() {
     return (
         <div className="bg-[#050505] text-white min-h-screen">
 
-            <Navbar />
+            
 
             <section className="pt-32 pb-32 px-6 relative overflow-hidden">
 

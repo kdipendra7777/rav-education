@@ -5,8 +5,11 @@ import DigitalEducation from "../component/SmartSchool/DigitalEducation";
 import FeatureShowcase from "../component/SmartSchool/FeatureShowcase";
 import FreeForEveryone from "../component/SmartSchool/FreeForEveryone";
 import HeroSection from "../component/SmartSchool/HeroSection";
-import Navbar from "../component/SmartSchool/Navbar";
+import Navbar from "../component/Navbar";
 import SmartDesk from "../component/SmartSchool/SmartDesk";
+import SmartNavbar from "../component/SmartSchool/SmartNavbar";
+
+
 
 export default function SmartPage() {
 
@@ -16,7 +19,10 @@ export default function SmartPage() {
 
   return (
     <div className="bg-[#0b0b0b]">
-      <Navbar />
+
+      <Navbar/>
+      <SmartNavbar/>
+      
       <HeroSection />
       <SmartDesk/>
       <DigitalEducation/>
