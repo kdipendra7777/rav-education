@@ -6,7 +6,7 @@ export default function SmartNavbar() {
 
       <div className="w-full max-w-5xl flex justify-center">
 
-        <div className="flex items-center px-2 sm:px-5 py-2
+        <div className="flex items-center justify-center px-2 sm:px-5 py-2
                         rounded-xl sm:rounded-full
                         bg-white/80 dark:bg-[#0B0F19]/85
                         backdrop-blur-2xl
@@ -15,7 +15,7 @@ export default function SmartNavbar() {
                         dark:shadow-[0_8px_30px_rgba(0,0,0,0.6)]
                         w-full sm:w-fit">
 
-          <div className="flex items-center gap-1 sm:gap-3 sm:justify-center w-full">
+          <div className="flex items-center justify-between sm:justify-center gap-1 sm:gap-2 w-full sm:w-auto">
 
             {[
               { to: "/smart-school", label: "Home" },
@@ -27,7 +27,7 @@ export default function SmartNavbar() {
                 key={i}
                 to={item.to}
                 className={({ isActive }) =>
-                  `whitespace-nowrap px-2 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-sm transition-all duration-300 ${
+                  `flex-1 sm:flex-none text-center whitespace-nowrap px-2 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-sm transition-all duration-300 ${
                     isActive
                       ? "bg-blue-600 text-white shadow"
                       : "text-gray-600 dark:text-gray-400 hover:text-blue-600"
@@ -40,7 +40,7 @@ export default function SmartNavbar() {
 
             <NavLink
               to="/apply"
-              className="whitespace-nowrap px-2 sm:px-4 py-1.5 rounded-full bg-blue-600 text-white text-[11px] sm:text-sm hover:bg-blue-700 transition"
+              className="flex-1 sm:flex-none text-center whitespace-nowrap px-2 sm:px-4 py-1.5 rounded-full bg-blue-600 text-white text-[11px] sm:text-sm hover:bg-blue-700 transition"
             >
               Apply
             </NavLink>
