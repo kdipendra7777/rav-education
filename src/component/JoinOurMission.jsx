@@ -18,10 +18,10 @@ export default function JoinOurMission() {
 
     emailjs
       .sendForm(
-        "service_9yaj9yb",   // 🔥 apna SERVICE ID daal
-      "template_90u0gsh",  // 🔥 apna TEMPLATE ID daal
+        "service_9yaj9yb",   
+      "template_90u0gsh",  
       formRef.current,
-      "5tN1ldW8qhvqdIeaQ"     // 🔥 apna PUBLIC KEY daal
+      "5tN1ldW8qhvqdIeaQ"     
       )
       .then(
         () => {
@@ -159,15 +159,43 @@ export default function JoinOurMission() {
     Apply Now
   </h2>
   <p className="text-sm text-gray-500 mb-6">
-    Join our mission and make a difference 🚀
+    Join our mission and make a difference 
   </p>
 
   {/* Success */}
   {success && (
-    <div className="mb-4 px-4 py-3 rounded-xl bg-green-50 text-green-700 text-sm border border-green-200">
-      ✅ Application submitted successfully!
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+    <div className="w-full max-w-md rounded-3xl bg-white p-6 shadow-2xl animate-[fadeIn_.3s_ease]">
+      
+      {/* Icon */}
+      <div className="flex items-center justify-center">
+        <div className="h-20 w-20 rounded-full bg-green-100 flex items-center justify-center">
+          <span className="text-4xl">✅</span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="mt-5 text-center">
+        <h2 className="text-2xl font-bold text-gray-800">
+          Application Submitted
+        </h2>
+
+        <p className="mt-2 text-gray-500 text-sm leading-relaxed">
+          Your application has been submitted successfully.
+          We will contact you soon.
+        </p>
+      </div>
+
+      {/* Button */}
+      <button
+        onClick={() => setSuccess(false)}
+        className="mt-6 w-full rounded-xl bg-green-600 py-3 text-white font-semibold transition hover:bg-green-700 active:scale-[0.98]"
+      >
+        Close
+      </button>
     </div>
-  )}
+  </div>
+)}
 
   <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
 
