@@ -43,7 +43,7 @@ export default function Navbar() {
                 : "text-gray-600 hover:text-blue-600 transition text-base"
             }
           >
-            Wrok Progress
+            Home
           </NavLink>
           <NavLink
             to="/work-progress"
@@ -140,6 +140,14 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-gray-100 shadow-sm">
           <nav className="flex flex-col px-6 py-6 gap-5 text-center text-base">
 
+
+            <NavLink
+              to="/"
+              onClick={() => setOpen(false)}
+              className="text-gray-700 font-medium"
+            >
+              Work Progress
+            </NavLink>
 
             <NavLink
               to="/work-progress"
