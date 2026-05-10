@@ -30,6 +30,9 @@ export default function Footer() {
               <p className="text-sm text-blue-200">
                 Education with Values
               </p>
+              <p className="text-sm text-blue-200">
+                @ Run by Raman Arnava Foundation- under registration
+              </p>
             </div>
 
           </div>
