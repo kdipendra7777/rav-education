@@ -226,6 +226,7 @@ export default function JoinOurMission() {
       <option>Teacher</option>
       <option>Mentor</option>
       <option>Supporter</option>
+      <option>Sponsor</option>
     </select>
 
     {/* Phone */}

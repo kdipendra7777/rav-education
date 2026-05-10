@@ -146,7 +146,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="text-gray-700 font-medium"
             >
-              Work Progress
+              Home
             </NavLink>
 
             <NavLink

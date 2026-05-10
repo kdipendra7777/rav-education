@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import CareerCTA from "./CareerCTA";
+import SponsorsSection from "./SponsorsSection";
+import SmartSchoolSection from "./SmartSchoolSection";
 
 export default function SupportOurMission() {
   return (
@@ -123,8 +125,11 @@ export default function SupportOurMission() {
 
 {/* 
       Career CTa */}
-
-      <CareerCTA/>
+<CareerCTA/>
+      
+      <SponsorsSection/>
+      
+      
 
       
 

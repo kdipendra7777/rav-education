@@ -6,6 +6,7 @@ import SmartSchoolSection from "../component/SmartSchoolSection";
 import Footer from "../component/Footer";
 import NoticeBoard from "../component/NoticeBoard";
 import CareerCTA from "../component/CareerCTA";
+import SponsorsSection from "../component/SponsorsSection";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <NoticeBoard/>
       <SmartSchoolSection/>
       <SupportOurMission/>
+      
       <Footer/>
     </div>
   );
