@@ -1,13 +1,17 @@
 import { Info } from "lucide-react";
-import CareerNavbar from "./CareerNavbar";
+import Navbar from "../Navbar";
+
 
 export default function Jobs() {
   const jobs = []; // abhi empty
 
   return (
+    <>
+    <Navbar/>
     <section className="bg-[#f8fafc] py-20 px-4">
+      
       <div className="max-w-6xl mx-auto">
-        <CareerNavbar/>
+        
 
         {/* HEADING */}
         <div className="text-center mb-14">
@@ -56,5 +60,6 @@ export default function Jobs() {
 
       </div>
     </section>
+    </>
   );
 }
