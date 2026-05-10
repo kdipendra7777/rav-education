@@ -122,7 +122,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm text-blue-200 leading-relaxed">
-            📍 Ghazipur, Uttar Pradesh <br />
+            📍 Uttar Pradesh <br />
             {/* 📞 +91 98765 43210 */}
           </p>
         </motion.div>
