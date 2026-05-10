@@ -15,7 +15,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          
+
           {/* Desktop Logo */}
           <img
             src="/images/logo.jpg"
@@ -35,7 +35,16 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6">
 
-
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-700 font-semibold text-base"
+                : "text-gray-600 hover:text-blue-600 transition text-base"
+            }
+          >
+            Wrok Progress
+          </NavLink>
           <NavLink
             to="/work-progress"
             className={({ isActive }) =>
@@ -44,10 +53,10 @@ export default function Navbar() {
                 : "text-gray-600 hover:text-blue-600 transition text-base"
             }
           >
-           Wrok Progress
+            Wrok Progress
           </NavLink>
 
-           <NavLink
+          <NavLink
             to="/feature-career"
             className={({ isActive }) =>
               isActive
@@ -55,7 +64,7 @@ export default function Navbar() {
                 : "text-gray-600 hover:text-blue-600 transition text-base"
             }
           >
-           Features
+            Features
           </NavLink>
 
           <NavLink to="/careers" className={navItemClass}>
@@ -85,7 +94,7 @@ export default function Navbar() {
             Join Mission
           </NavLink>
 
-           <NavLink
+          <NavLink
             to="/admission"
             className={({ isActive }) =>
               isActive
@@ -140,7 +149,7 @@ export default function Navbar() {
               Work Progress
             </NavLink>
 
-             <NavLink
+            <NavLink
               to="/feature-career"
               onClick={() => setOpen(false)}
               className="text-gray-700 font-medium"
@@ -172,7 +181,7 @@ export default function Navbar() {
               Join Mission
             </NavLink>
 
-             <NavLink
+            <NavLink
               to="/admission"
               onClick={() => setOpen(false)}
               className="text-blue-600 font-medium"
