@@ -80,7 +80,7 @@ function App() {
         <Route path="/terms" element={<TermsAndConditions/>}/>
         <Route path="/events" element={<EventsPage/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
-        <Route path="/quizevent/1776774891521" element={<RegistrationForm/>}/>
+        <Route path="/quizevent" element={<RegistrationForm/>}/>
 
         {/*  Secret */}
         <Route path="/secret" element={<SecretPage />} />

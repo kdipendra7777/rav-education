@@ -130,7 +130,7 @@ export default function EventsCards() {
                             {/* BUTTON */}
 
                             <Link
-                                to={`/quizevent/${event.id}`}
+                                to="/quizevent"
                                 className="mt-6 block w-full rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 text-center text-sm font-bold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
                             >
                                 Explore Event
