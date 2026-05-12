@@ -112,7 +112,7 @@ export default function QuizRegistrationForm() {
               </p>
 
               <h3 className="mt-2 text-2xl font-bold">
-                1000+ Students
+                100+ Students
               </h3>
 
             </div>

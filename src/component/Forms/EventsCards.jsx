@@ -6,11 +6,11 @@ export default function EventsCards() {
        
         {
             id: 3,
-            title: "Coding Challenge",
-            date: "25 JUL",
-            desc: "Join the coding competition and solve real-world programming challenges with creativity.",
+            title: "Digital Minds Quiz",
+            date: "To be notified",
+            desc: "Digital Minds Challenge is a future-focused quiz competition for students of classes 1–12, covering AI, internet to inspire innovation and digital learning.",
             image:
-                "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+                "/images/quiz.png",
         },
     ];
 
@@ -27,9 +27,6 @@ export default function EventsCards() {
                         School Activities
                     </p>
 
-                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-                        Upcoming Events
-                    </h1>
 
                     <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-500 md:text-base">
                         Explore educational competitions, workshops, and exciting learning experiences for students.
@@ -64,27 +61,10 @@ export default function EventsCards() {
 
                                 {/* TAG */}
 
-                                <div className="absolute left-5 top-5">
-
-                                    <span className="rounded-full bg-white/90 px-4 py-1.5 text-xs font-semibold text-blue-600 backdrop-blur-md">
-                                        School Event
-                                    </span>
-
-                                </div>
+                                
 
                                 {/* DATE */}
 
-                                <div className="absolute right-5 top-5 rounded-2xl bg-white/90 px-4 py-2 text-center shadow-lg backdrop-blur-md">
-
-                                    <p className="text-lg font-black text-slate-900">
-                                        {event.date.split(" ")[0]}
-                                    </p>
-
-                                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">
-                                        {event.date.split(" ")[1]}
-                                    </p>
-
-                                </div>
 
                                 {/* TITLE */}
 
@@ -115,7 +95,7 @@ export default function EventsCards() {
                                         <div>
 
                                             <p className="text-sm font-semibold text-slate-800">
-                                                Raman Arnava Vidyalaya
+                                                To be notified
                                             </p>
 
                                             <p className="text-xs text-slate-500">
