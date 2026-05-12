@@ -140,7 +140,7 @@ export default function EventsCards() {
                                     to="/quizevent"
                                     className="mt-6 block w-full rounded-2xl bg-slate-900 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-300 hover:bg-slate-800"
                                 >
-                                    Explore Event
+                                    Register
                                 </Link>
 
                             </div>
