@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar";
+import EventsCards from "../Forms/EventsCards";
 
 export default function EventsPage() {
 
@@ -11,6 +12,7 @@ export default function EventsPage() {
     }, []);
 
     return (
+        <>
         <div className="min-h-screen bg-gray-50">
 
             <Navbar/>
@@ -80,95 +82,11 @@ export default function EventsPage() {
 
             </div>
 
-            {/* ⚪ EVENTS */}
-            <div className="max-w-7xl mx-auto px-6 py-20 space-y-32">
-
-                {events.map((event, index) => (
-                    <div
-                        key={event.id}
-                        className={`flex justify-center ${index % 2 !== 0 ? "md:justify-end" : "md:justify-start"
-                            }`}
-                    >
-
-                        {/* 💎 CARD */}
-                        <div className="group relative w-[340px] md:w-[420px] bg-white rounded-2xl shadow-2xl p-3 transform rotate-[-3deg] hover:rotate-0 transition duration-500">
-
-                            {/* IMAGE */}
-                            <div className="relative rounded-xl overflow-hidden">
-
-                                <img
-                                    src={event.image}
-                                    alt={event.title}
-                                    className="w-full h-52 object-cover"
-                                />
-
-                                {/* DATE BADGE */}
-                                <div className="absolute top-3 left-3 bg-white rounded-lg px-3 py-2 text-center shadow-md">
-                                    <p className="text-lg font-bold text-gray-800">
-                                        {event.date?.split(" ")[0] || "01"}
-                                    </p>
-                                    <p className="text-xs text-red-500 font-semibold">
-                                        {event.date?.split(" ")[1] || "JAN"}
-                                    </p>
-                                </div>
-
-                                {/* LIKE ICON */}
-                                <div className="absolute top-3 right-3 bg-white w-8 h-8 rounded-full flex items-center justify-center shadow">
-                                    ❤️
-                                </div>
-
-                                {/* USERS */}
-                                <div className="absolute bottom-3 left-3 flex items-center gap-1 text-white text-xs">
-                                    <div className="flex -space-x-2">
-                                        <img className="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=1" />
-                                        <img className="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=2" />
-                                        <img className="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=3" />
-                                    </div>
-                                    <span className="ml-2">+1K Going</span>
-                                </div>
-
-                            </div>
-
-                            {/* CONTENT */}
-                            <div className="p-4">
-
-                                {/* CATEGORY */}
-                                <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-md">
-                                    School Event
-                                </span>
-
-                                {/* TITLE */}
-                                <h2 className="text-lg font-bold text-gray-800 mt-2">
-                                    {event.title}
-                                </h2>
-
-                                {/* LOCATION */}
-                                <p className="text-sm text-gray-500 mt-1">
-                                    📍 Raman Arnava Vidyalaya Campus
-                                </p>
-
-                                {/* DATE TIME */}
-                                <p className="text-sm text-gray-500">
-                                    🗓 {event.date}
-                                </p>
-
-                                {/* DESC */}
-                                <p className="text-xs text-gray-500 mt-2 line-clamp-2">
-                                    {event.desc}
-                                </p>
-
-                                {/* BUTTONS */}
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                ))}
-
-            </div>
+           
 
         </div>
+
+        <EventsCards/>
+        </>
     );
 }

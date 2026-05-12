@@ -27,6 +27,7 @@ import LearnMore from "./pages/LearnMore.jsx";
 import WorkProgress from "./pages/WorkProgress.jsx";
 import AdmissionProcess from "./pages/AdmissionProcess.jsx";
 import WelcomeKit from "./pages/WelcomeKit.jsx";
+import RegistrationForm from "./component/Forms/RegistrationForm.jsx";
 
 
 
@@ -79,6 +80,7 @@ function App() {
         <Route path="/terms" element={<TermsAndConditions/>}/>
         <Route path="/events" element={<EventsPage/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/quizevent/1776774891521" element={<RegistrationForm/>}/>
 
         {/*  Secret */}
         <Route path="/secret" element={<SecretPage />} />
