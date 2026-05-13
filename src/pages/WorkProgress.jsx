@@ -2,7 +2,7 @@ import Navbar from "../component/Navbar";
 
 export default function WorkProgressPage() {
 
-  const collected = 5645;
+  const collected = 5655;
   const target = 20000;
   const percent = Math.min((collected / target) * 100, 100);
 
