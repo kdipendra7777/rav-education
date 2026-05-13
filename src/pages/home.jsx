@@ -7,6 +7,7 @@ import Footer from "../component/Footer";
 import NoticeBoard from "../component/NoticeBoard";
 import CareerCTA from "../component/CareerCTA";
 import SponsorsSection from "../component/SponsorsSection";
+import EventSection from "../component/EventSection";
 
 
 
@@ -16,8 +17,11 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <NoticeBoard/>
+      <EventSection/>
+      
       <SmartSchoolSection/>
       <SupportOurMission/>
+      
       
       <Footer/>
     </div>

@@ -45,15 +45,18 @@ export default function Navbar() {
           >
             Home
           </NavLink>
+
+
+          
           <NavLink
-            to="/work-progress"
+            to="/events"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-700 font-semibold text-base"
                 : "text-gray-600 hover:text-blue-600 transition text-base"
             }
           >
-            Wrok Progress
+            Events
           </NavLink>
 
           <NavLink
@@ -150,11 +153,11 @@ export default function Navbar() {
             </NavLink>
 
             <NavLink
-              to="/work-progress"
+              to="/events"
               onClick={() => setOpen(false)}
               className="text-gray-700 font-medium"
             >
-              Work Progress
+              Events
             </NavLink>
 
             <NavLink
