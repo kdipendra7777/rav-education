@@ -30,9 +30,7 @@ export default function Footer() {
               <p className="text-sm text-blue-200">
                 Education with Values
               </p>
-              <p className="text-sm text-blue-200">
-                @ Run by Raman Arnava Foundation- under registration
-              </p>
+              
             </div>
 
           </div>
@@ -81,10 +79,10 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-blue-200">
             <li><Link to="/" className="hover:text-white transition">Home</Link></li>
             <li><Link to="/smart-school" className="hover:text-white transition">Smart School</Link></li>
-            <li><Link to="/admission" className="hover:text-white transition">Admission</Link></li>
+           
             <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
             <li><Link to="/careers" className="hover:text-white transition">Career</Link></li>
-            <li><Link to="/work-progress" className="hover:text-white transition">Work Progress</Link></li>
+            
             <li><Link to="/feature-career" className="hover:text-white transition">Features</Link></li>
             <li><Link to="/joinmission" className="hover:text-white transition">Join Mission</Link></li>
           </ul>
@@ -100,6 +98,8 @@ export default function Footer() {
             <li><Link to="/privacy" className="hover:text-white transition">Privacy Policy</Link></li>
             <li><Link to="/terms" className="hover:text-white transition">Terms & Conditions</Link></li>
             <li><Link to="/events" className="hover:text-white transition">Events</Link></li>
+            <li><Link to="/work-progress" className="hover:text-white transition">Work Progress</Link></li>
+             <li><Link to="/admission" className="hover:text-white transition">Admission</Link></li>
           </ul>
         </motion.div>
 
@@ -134,6 +134,12 @@ export default function Footer() {
         <p className="text-sm text-blue-300 text-center md:text-left">
           © {new Date().getFullYear()} Raman Arnava Vidyalaya. All rights reserved.
         </p>
+
+       <Link>
+        <p className="text-sm text-blue-200">
+                @ Run by Raman Arnava Foundation- under registration
+              </p>
+       </Link>
 
         <Link
           to="/pay"
